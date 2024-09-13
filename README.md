@@ -10,8 +10,11 @@ The BMI formula is applied after converting the height into meters.
 _Weight (in kilograms)_
 
 Users enter their weight in kilograms.
-Height (in feet and optional inches)
 
-_Height is provided using **two** inputs:_
+_Height (in feet and optional inches)_
+
+Height is provided using **two** inputs:
+
 **Feet**: Required input for height in feet.
+
 **Inches**: Optional input for additional height in inches.
