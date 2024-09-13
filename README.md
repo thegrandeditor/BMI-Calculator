@@ -1,5 +1,5 @@
-**BMI Calculator Overview
-**
+**BMI Calculator Overview**
+
 What is **BMI**?
 
 BMI (Body Mass Index) is a measure that uses height and weight to determine if a person has a healthy body weight for their height.
