@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator (Kg & Feet)</title>
-    <style>
+    <link rel="icon" href="icon.png">
+
+    <meta name="descriptiion" content="na me write am">
+    <meta name="author" content="Uche Chidera">
+    <meta name="keywords" content="BMI, HTML, CSS">
+
+    <meta property="og:title" content="BMI Calculator">
+    <meta property="og:description" content="BMI helps users understand their weight category and health risks.">
+    <meta property="og:image" content="https://bmi-calculator-an6g.onrender.com/icon.jpg">
+    <meta property="og:url" content="https://bmi-calculator-an6g.onrender.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BMI Calculator">
+    <meta property="og:locale" content="en_US">
+
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -90,23 +104,23 @@
 
 <script>
 function calculateBMI() {
-    // Get the input values
+    
     let weight = document.getElementById("weight").value;
     let heightFeet = document.getElementById("heightFeet").value;
-    let heightInches = document.getElementById("heightInches").value || 0; // Default to 0 if no inches entered
+    let heightInches = document.getElementById("heightInches").value || 0; 
 
-    // Convert height to total meters
+    
     let totalHeightInMeters = ((parseInt(heightFeet) * 12) + parseInt(heightInches)) * 0.0254;
     
-    // Check if inputs are valid
+    
     if (weight > 0 && totalHeightInMeters > 0) {
-        // BMI calculation (kg & meters)
+        
         let bmi = weight / (totalHeightInMeters * totalHeightInMeters);
         
-        // Display the result
+        
         document.getElementById("result").innerHTML = "Your BMI is " + bmi.toFixed(2);
 
-        // Determine BMI category
+        
         let category = '';
         if (bmi < 18.5) {
             category = "Underweight";
@@ -118,7 +132,7 @@ function calculateBMI() {
             category = "Obese";
         }
 
-        // Display the category
+        
         document.getElementById("category").innerHTML = "You are classified as: " + category;
     } else {
         document.getElementById("result").innerHTML = "Please enter valid weight and height!";
